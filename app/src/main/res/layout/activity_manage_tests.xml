@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".screens.ManageTestsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/in_app_title"
+                layout="@layout/layout_app_heading_blue_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.05"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_app_bacground" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_large"
+                android:layout_marginEnd="@dimen/dimen_large"
+                android:text="Hello Admin,"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_heading"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/in_app_title" />
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Manage tests from here"
+                android:textColor="@color/dark_blue_100"
+                android:textSize="@dimen/text_title"
+                app:layout_constraintStart_toStartOf="@id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_large"
+                app:layout_constraintTop_toBottomOf="@id/tvSubTitle">
+
+                <LinearLayout
+                    android:id="@+id/llAddTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_small"
+                    android:layout_marginStart="@dimen/dimen_large"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_curved_rectangle_small_stroke"
+                    android:elevation="@dimen/elevation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_large">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_add_task" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_tiny"
+                        android:gravity="center"
+                        android:text="Add Task"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_button"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_small"
+                    android:layout_marginStart="@dimen/dimen_large"
+                    android:layout_marginEnd="@dimen/dimen_large"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_curved_rectangle_small_stroke"
+                    android:elevation="@dimen/elevation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_large">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_add_test" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_tiny"
+                        android:gravity="center"
+                        android:text="Add Test"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_button"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ll1">
+
+                <LinearLayout
+                    android:id="@+id/llTaskList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_small"
+                    android:layout_marginStart="@dimen/dimen_large"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_curved_rectangle_small_stroke"
+                    android:elevation="@dimen/elevation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_large">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_task_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_tiny"
+                        android:gravity="center"
+                        android:text="Task List"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_button"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTestList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_small"
+                    android:layout_marginStart="@dimen/dimen_large"
+                    android:layout_marginEnd="@dimen/dimen_large"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_curved_rectangle_small_stroke"
+                    android:elevation="@dimen/elevation"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_large">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_test_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_tiny"
+                        android:gravity="center"
+                        android:text="Test List"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_button"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

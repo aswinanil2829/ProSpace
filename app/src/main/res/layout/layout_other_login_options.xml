@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_large_x2">
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Or"
+        android:textColor="@color/dark_blue_100"
+        android:textSize="@dimen/text_button" />
+
+    <TextView
+        android:id="@+id/tvOtherLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:gravity="center"
+        android:text="Login/Register with"
+        android:textColor="@color/dark_blue_100"
+        android:textSize="@dimen/text_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dimen_small">
+
+        <ImageView
+            android:id="@+id/ivGoogleSignIn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/login_google" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:src="@drawable/login_facebook"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:src="@drawable/login_twitter"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

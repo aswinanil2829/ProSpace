@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".screens.UserHomeActivity">
+
+    <!--    <androidx.core.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/in_app_title"
+            layout="@layout/layout_app_heading_blue_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.05"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_app_bacground" />
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/dimen_normal"
+            android:background="@drawable/bg_curved_rectangle_small"
+            android:backgroundTint="@color/blue"
+            android:padding="@dimen/dimen_tiny"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintBottom_toBottomOf="@id/in_app_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/in_app_title" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:layout_marginEnd="@dimen/dimen_large"
+            android:text="Hello,\nAbc Abc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_heading_x2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/in_app_title" />
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="good morning, check todays tasks"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_title_x1"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvCheckTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_large"
+            android:layout_marginBottom="@dimen/dimen_large_x5"
+            android:background="@drawable/bg_curved_rectangle_large"
+            android:backgroundTint="@color/blue"
+            android:elevation="@dimen/elevation"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dimen_normal"
+            android:paddingVertical="@dimen/dimen_small"
+            android:text="Check tasks"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/text_button"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:layout_marginTop="@dimen/dimen_large"
+            android:layout_marginEnd="@dimen/dimen_large"
+            android:text="or"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_heading"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCheckTask"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/tvSurveyTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:layout_marginTop="@dimen/dimen_large"
+            android:layout_marginEnd="@dimen/dimen_large"
+            android:text="Lets see,\n  How you were up today!"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_heading_x2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOr"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/tvTakeSurvey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:layout_marginBottom="@dimen/dimen_large_x5"
+            android:background="@drawable/bg_curved_rectangle_large"
+            android:backgroundTint="@color/red"
+            android:elevation="@dimen/elevation"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dimen_normal"
+            android:text="Take survey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_subtitle"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintWidth_percent="0.7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

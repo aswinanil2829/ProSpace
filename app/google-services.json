@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "221951112735",
+    "firebase_url": "https://prospace-d1f5b-default-rtdb.firebaseio.com",
+    "project_id": "prospace-d1f5b",
+    "storage_bucket": "prospace-d1f5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221951112735:android:f10d7f43c6f664dfa6472a",
+        "android_client_info": {
+          "package_name": "com.main.prospace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221951112735-rn90urrsnosr39gn14fgdc0mltat130g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.main.prospace",
+            "certificate_hash": "b2d85945a74e80fecf6734924c51b29f8276b1ba"
+          }
+        },
+        {
+          "client_id": "221951112735-f252n1eim522pbpg96c6nbaoj2dh1gie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSWAiK4D3vhgxIywcvF_qS3Q-IlNxtFgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221951112735-f252n1eim522pbpg96c6nbaoj2dh1gie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

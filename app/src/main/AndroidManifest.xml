@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main.prospace">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".screens.OtherSignInActivity"></activity>
+        <activity android:name=".screens.TestListActivity" />
+        <activity android:name=".screens.TestDetailsActivity" />
+        <activity android:name=".screens.TaskDetailsActivity" />
+        <activity android:name=".screens.TaskListActivity" />
+        <activity android:name=".screens.AddTaskActivity" />
+        <activity android:name=".screens.TestAnalyticsActivity" />
+        <activity android:name=".screens.ManageUsersActivity" />
+        <activity android:name=".screens.ManageTestsActivity" />
+        <activity android:name=".screens.TestGeneratorActivity" />
+        <activity android:name=".screens.AddTestActivity" />
+        <activity android:name=".screens.UserListActivity" />
+        <activity android:name=".screens.AdminHomeActivity" />
+        <activity android:name=".screens.UserHomeActivity" />
+        <activity android:name=".screens.UserSignInActivity" />
+        <activity android:name=".screens.WelcomeActivity" />
+        <activity android:name=".screens.UserSignUpActivity" />
+        <activity android:name=".screens.SplashActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

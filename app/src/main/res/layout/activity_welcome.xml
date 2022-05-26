@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.WelcomeActivity">
+
+    <include
+        android:id="@+id/in_app_title"
+        layout="@layout/layout_app_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivWelcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/img_welcome"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@id/in_app_title" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hey!"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_heading"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivWelcomeImage" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:gravity="center"
+        android:text="Welcome to Prospace"
+        android:textColor="@color/dark_blue_100"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_large_x2"
+        android:layout_marginTop="@dimen/dimen_large_x1"
+        android:background="@drawable/bg_curved_rectangle_large"
+        android:backgroundTint="@color/dark_blue"
+        android:elevation="@dimen/elevation"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dimen_small"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_button"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_large_x5"
+        android:layout_marginEnd="@dimen/dimen_large_x2"
+        android:background="@drawable/bg_curved_rectangle_large"
+        android:backgroundTint="@color/red"
+        android:elevation="@dimen/elevation"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dimen_small"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_button"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLogin"
+        app:layout_constraintTop_toTopOf="@id/tvLogin" />
+
+    <include
+        android:id="@+id/in_other_login"
+        layout="@layout/layout_other_login_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
